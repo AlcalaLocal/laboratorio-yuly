@@ -4,46 +4,22 @@ import { Icon } from "@/components/Icons";
 function HeroArt() {
   return (
     <div className="relative mx-auto w-full max-w-md lg:max-w-none">
-      {/* Tarjeta ilustrada */}
-      <div className="relative overflow-hidden rounded-[2rem] bg-gradient-to-br from-brand-600 to-brand-800 p-1 shadow-2xl shadow-brand-900/25">
-        <div className="rounded-[1.8rem] bg-gradient-to-br from-brand-50 to-white p-6 sm:p-8">
-          <svg viewBox="0 0 400 360" className="h-auto w-full" role="img" aria-label="Ilustración de laboratorio clínico">
-            <defs>
-              <linearGradient id="tube" x1="0" y1="0" x2="0" y2="1">
-                <stop offset="0" stopColor="#5eead4" />
-                <stop offset="1" stopColor="#0d9488" />
-              </linearGradient>
-              <linearGradient id="tube2" x1="0" y1="0" x2="0" y2="1">
-                <stop offset="0" stopColor="#7dd3fc" />
-                <stop offset="1" stopColor="#0ea5e9" />
-              </linearGradient>
-            </defs>
-            <circle cx="200" cy="180" r="150" fill="#ccfbf1" opacity="0.55" />
-            <circle cx="310" cy="80" r="40" fill="#99f6e4" opacity="0.6" />
-
-            {/* Tubos de ensayo */}
-            <g transform="translate(120 60)">
-              <rect x="0" y="0" width="34" height="200" rx="17" fill="#ffffff" stroke="#0f766e" strokeWidth="3" />
-              <rect x="4" y="90" width="26" height="106" rx="13" fill="url(#tube)" />
-              <rect x="50" y="30" width="34" height="200" rx="17" fill="#ffffff" stroke="#0f766e" strokeWidth="3" />
-              <rect x="54" y="150" width="26" height="76" rx="13" fill="url(#tube2)" />
-              <rect x="100" y="70" width="34" height="200" rx="17" fill="#ffffff" stroke="#0f766e" strokeWidth="3" />
-              <rect x="104" y="120" width="26" height="146" rx="13" fill="url(#tube)" />
-            </g>
-
-            {/* Gota */}
-            <path d="M300 170c0 22-18 40-40 40s-40-18-40-40c0-30 40-70 40-70s40 40 40 70Z" fill="url(#tube2)" opacity="0.95" />
-            <circle cx="248" cy="178" r="7" fill="#ffffff" opacity="0.7" />
-
-            {/* Molécula */}
-            <g stroke="#0f766e" strokeWidth="3" opacity="0.85">
-              <line x1="70" y1="300" x2="120" y2="320" />
-              <line x1="120" y1="320" x2="160" y2="296" />
-            </g>
-            <circle cx="70" cy="300" r="11" fill="#0d9488" />
-            <circle cx="120" cy="320" r="11" fill="#38bdf8" />
-            <circle cx="160" cy="296" r="11" fill="#2dd4bf" />
-          </svg>
+      {/* Foto de la profesional */}
+      <div className="relative overflow-hidden rounded-[2rem] bg-gradient-to-br from-brand-600 to-brand-800 p-1.5 shadow-2xl shadow-brand-900/25">
+        <div className="relative overflow-hidden rounded-[1.7rem]">
+          <img
+            src="/img/yuly.webp"
+            alt="Dra. Yuly Osorio, bacterióloga, en el Laboratorio Clínico Dra. Yuly Osorio en Alcalá, Valle del Cauca"
+            width="1000"
+            height="1250"
+            className="h-auto w-full object-cover"
+          />
+          <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-ink/85 via-ink/35 to-transparent p-5 pt-16">
+            <p className="text-lg font-extrabold text-white">Dra. Yuly Osorio</p>
+            <p className="text-sm font-semibold text-brand-200">
+              Bacterióloga · Dirección del laboratorio
+            </p>
+          </div>
         </div>
       </div>
 

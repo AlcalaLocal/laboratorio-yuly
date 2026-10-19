@@ -34,9 +34,13 @@ export default function About() {
               prioridad.
             </p>
             <div className="mt-8 flex items-center gap-3 border-t border-white/15 pt-6">
-              <span className="flex h-12 w-12 items-center justify-center rounded-full bg-white/15 text-xl font-extrabold text-white">
-                YO
-              </span>
+              <img
+                src="/img/yuly-headshot.webp"
+                alt="Dra. Yuly Osorio, bacterióloga"
+                width="48"
+                height="48"
+                className="h-12 w-12 rounded-full object-cover ring-2 ring-white/30"
+              />
               <span>
                 <span className="block font-bold text-white">Dra. Yuly Osorio</span>
                 <span className="block text-sm text-brand-200">
